@@ -4,6 +4,10 @@ import Cat from "./components/Cat.jsx";
 function App(){
 
   const lastName = "Masurom";
+  const testFunc = () => {
+    console.log("Hello");
+    return <p>Hello</p>;
+  }
   
 
   return(
@@ -25,10 +29,15 @@ function App(){
         isTrue={true}
       />
       <Cat 
-        name={`aminuddin ${lastName}`}
         role={23}
+        name={`aminuddin ${lastName}`}
         isTrue={true}
-        test={()=>console.log("okay")}
+        // test={()=>console.log("hello")}
+        test={testFunc}
+        test2={() => {
+          return <p>Evening</p>
+        }}
+
       />
     </div>
   )
