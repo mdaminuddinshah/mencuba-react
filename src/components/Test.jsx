@@ -12,6 +12,7 @@ const Test = (props) => {
         borderRadius: "5px",
         padding: "10px"
     }}>
+        <p>{props.Hobby}</p>
         <p>{`Occupation: ${props.occupation}`}</p>
         <p>{`Firstname: ${props.acc.firstName}`}</p>
         <p>{`Lastname: ${props.acc.lastName}`}</p>
@@ -30,7 +31,8 @@ Test.propTypes = {
     }),
     occupation: PropTypes.string,
     hidden: PropTypes.bool,
+    Hobby: PropTypes.string
     
 }
 
-export default Test
+export default Test;

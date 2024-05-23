@@ -1,13 +1,11 @@
 import Title from "./components/Title.jsx";
-import Cat from "./components/Cat.jsx";
+import Test2 from "./components/Test2.jsx";
 import Test from "./components/Test.jsx";
 
 function App(){
 
-  const lastName = "Masurom";
-  const testFunc = () => {
-    console.log("Hello");
-    return <p>Hello</p>;
+  const test2 = () => {
+    return <p>Evening</p>
   }
 
   const users = [
@@ -25,7 +23,6 @@ function App(){
     }
 
 ];
-  
 
   return(
     <div style={{
@@ -36,26 +33,17 @@ function App(){
       // border: '1px solid black'
 
     }}>
-      <Title />
-      <Title />
       {/* only string dont need curly bracket */}
       {/* other types, number, expression all need curly bracket */}
-      <Cat 
-        name="shah"
+      <Test2 
+        name='amin'
         role={21}
         isTrue={true}
-      />
-      <Cat 
-        role={23}
-        name={`aminuddin ${lastName}`}
-        isTrue={true}
-        // test={()=>console.log("hello")}
-        test={testFunc}
-        test2={() => {
-          return <p>Evening</p>
-        }}
+        test={() => {return <p>Hello</p>}}
+        test2={test2}
 
       />
+      
       
       {/* cara buat map di react */}
       {
@@ -64,10 +52,12 @@ function App(){
           acc={id}
           occupation="Engineer"
           hidden={id.active}
+          key={users}
           />
       })
       }
 
+      <Title />
 
     </div>
   )
