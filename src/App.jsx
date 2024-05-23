@@ -1,6 +1,7 @@
 import Test2 from "./components/Test2.jsx";
 import Test from "./components/Test.jsx";
 import Test3 from "./components/Test3.jsx";
+import Count from "./components/Count.jsx";
 
 function App(){
 
@@ -42,6 +43,7 @@ function App(){
       // border: '1px solid black'
 
     }}>
+      <Count/>
       {/* only string dont need curly bracket */}
       {/* other types, number, expression all need curly bracket */}
       <Test2 
