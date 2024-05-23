@@ -1,12 +1,21 @@
-import Title from "./components/Title.jsx";
 import Test2 from "./components/Test2.jsx";
 import Test from "./components/Test.jsx";
+import Test3 from "./components/Test3.jsx";
 
 function App(){
 
   const test2 = () => {
     return <p>Evening</p>
   }
+
+  const acc = [
+    {name: "amin"},
+    {name: "hanim"}
+  ];
+  const acc2 = [
+    {nama: "amin"},
+    {nama: "hanim"}
+  ];
 
   const users = [
     {
@@ -21,8 +30,8 @@ function App(){
     age: 20,
     active: false
     }
+  ];
 
-];
 
   return(
     <div style={{
@@ -50,15 +59,28 @@ function App(){
       users.map((id) => {
         return <Test 
           acc={id}
-          occupation="Engineer"
-          hidden={id.active}
+          // occupation="Engineer"
+          // hidden={id.active}
           key={users}
           />
       })
-      }
+    }
+   
+   {acc.map((ab) => {
+    return <Test3 
+      acc={ab}
+      key={acc}
+    />
+   })}
 
-      <Title />
-
+   {acc2.map((abc) => {
+    return <Test3 
+        duo={abc}
+        key={acc2}
+    />
+   })}
+      
+      
     </div>
   )
 }

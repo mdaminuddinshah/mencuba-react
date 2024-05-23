@@ -17,6 +17,7 @@ const Test = (props) => {
         <p>{`Firstname: ${props.acc.firstName}`}</p>
         <p>{`Lastname: ${props.acc.lastName}`}</p>
         <p>{`Age: ${props.acc.age}`}</p>
+   
 
 
     </div>
@@ -31,7 +32,8 @@ Test.propTypes = {
     }),
     occupation: PropTypes.string,
     hidden: PropTypes.bool,
-    Hobby: PropTypes.string
+    Hobby: PropTypes.string, 
+    
     
 }
 

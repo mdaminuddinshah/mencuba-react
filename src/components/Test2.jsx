@@ -37,7 +37,8 @@ Test2.propTypes = {
     role: PropTypes.string,
     isTrue: PropTypes.bool,
     test: PropTypes.func,
-    test2: PropTypes.func
+    test2: PropTypes.func,
+    
 }
 
 export default Test2;
