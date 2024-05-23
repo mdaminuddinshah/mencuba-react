@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Cat = (props) => {
 
     // ?. is optional chaining operator
@@ -30,6 +32,10 @@ const Cat = (props) => {
             {props.test2 && props.test2()}
         </div>
     )
+}
+
+Cat.protoTypes = {
+    name: PropTypes.string,
 }
 
 export default Cat;

@@ -1,5 +1,6 @@
 import Title from "./components/Title.jsx";
 import Cat from "./components/Cat.jsx";
+import Test from "./components/Test.jsx";
 
 function App(){
 
@@ -8,6 +9,22 @@ function App(){
     console.log("Hello");
     return <p>Hello</p>;
   }
+
+  const users = [
+    {
+    firstName: "aminuddin",
+    lastName: "masurom",
+    age: 21,
+    active: true
+    },
+    {
+    firstName: "hanim",
+    lastName: "bukhari",
+    age: 20,
+    active: false
+    }
+
+];
   
 
   return(
@@ -39,6 +56,19 @@ function App(){
         }}
 
       />
+      
+      {/* cara buat map di react */}
+      {
+      users.map((id) => {
+        return <Test 
+          acc={id}
+          occupation="Engineer"
+          hidden={id.active}
+          />
+      })
+      }
+
+
     </div>
   )
 }
