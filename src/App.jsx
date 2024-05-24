@@ -3,6 +3,7 @@ import Test from "./components/Test.jsx";
 import Test3 from "./components/Test3.jsx";
 import Count from "./components/Count.jsx";
 import State2 from "./components/State2.jsx";
+import RegisterForm from "./components/RegisterForm.jsx";
 
 function App(){
 
@@ -44,8 +45,10 @@ function App(){
       gap: "7px",
       padding: "15px",
       // border: '1px solid black'
-
     }}>
+
+      <RegisterForm />
+
       <Count/>
       {/* only string dont need curly bracket */}
       {/* other types, number, expression all need curly bracket */}
