@@ -2,12 +2,15 @@ import Test2 from "./components/Test2.jsx";
 import Test from "./components/Test.jsx";
 import Test3 from "./components/Test3.jsx";
 import Count from "./components/Count.jsx";
+import State2 from "./components/State2.jsx";
 
 function App(){
 
   const test2 = () => {
     return <p>Evening</p>
   }
+
+  const students = ['amin', 'hanim', 'shah', 'farida'];
 
   const acc = [
     {name: "amin"},
@@ -82,7 +85,12 @@ function App(){
     />
    })}
       
-      
+      {students.map((abc) => {
+        return <State2 
+          sdt={abc}
+          key={students}
+        />
+      })}
     </div>
   )
 }

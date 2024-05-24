@@ -1,5 +1,6 @@
 import { useState } from "react";
 import State from "./useState.jsx";
+import "./Count.css";
 
 const Count = () => {
 
@@ -7,7 +8,7 @@ const Count = () => {
     const [nilai, tambahNilai] = useState(0);
 
   return (
-    <div>
+    <div className="font">
         Count: {counter}
         <button onClick={() => setCounter((before) => before +1 )}>Increase</button>
     
