@@ -4,6 +4,7 @@ import Test3 from "./components/Test3.jsx";
 import Count from "./components/Count.jsx";
 import State2 from "./components/State2.jsx";
 import RegisterForm from "./components/RegisterForm.jsx";
+import Comp from "./components/Comp.jsx";
 
 function App(){
 
@@ -46,6 +47,10 @@ function App(){
       padding: "15px",
       // border: '1px solid black'
     }}>
+
+      <Comp 
+        name="amin"
+      />
 
       <RegisterForm />
 
